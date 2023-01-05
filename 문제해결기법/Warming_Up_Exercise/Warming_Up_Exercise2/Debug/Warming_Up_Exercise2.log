@@ -1,0 +1,6 @@
+﻿  Warming_Up_Exercise2.c
+C:\problemsolving\Warming_Up_Exercise\Warming_Up_Exercise2\Warming_Up_Exercise2.c(37,9): warning C4101: 'num' :참조되지 않은 지역 변수입니다.
+C:\problemsolving\Warming_Up_Exercise\Warming_Up_Exercise2\Warming_Up_Exercise2.c(52,19): warning C4013: 'printf'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  LINK : C:\problemsolving\Warming_Up_Exercise\Debug\Warming_Up_Exercise2.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+Warming_Up_Exercise2.obj : error LNK2019: _printf_draw 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\problemsolving\Warming_Up_Exercise\Debug\Warming_Up_Exercise2.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.

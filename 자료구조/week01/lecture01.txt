@@ -1,0 +1,75 @@
+ADT: 자료형
+배열 ADT
+객체 : <인덱스,값> 쌍의 집합
+구조체 : 타입이 다른 데이터를 하나로 묶는 방법 -> 사용자 정의형 자료형
+
+어느 정도의 크기를 차지하는가,,
+struct studentTag{
+    char name[10]; => 12바이트 차지
+    int age;
+    double gpa;
+}
+
+struct studentTag s1;
+strcpy(s.name,"kim"); 문자열은 "=" 으로 값 할당할 수 없음
+s.age = 20;
+
+typedef studentTage{
+
+} student;
+
+student가 새로운 자료형이 됨
+
+희소행렬 : 대부분의 항들이 0인 배열
+
+포인터 : 다른 변수의 주소를 가지고 있는 변수
+어떤 변수가 메모리에서 차지하고 있는 위치를 알고 싶을 때 포인터 사용
+형식 매개변수 : 함수의 파라미터 
+실 매개변수 : 함수에 전달하는 매개변수
+여러개의 값을 return하고 싶을 때 포인터를 사용해서 return할 필요가 없어짐
+
+배열 이름 : 배열 시작점의 주소를 가리킴
+
+<동적 할당>
+p = (int *)malloc(sizeof(int)); 앞과 뒤의 int 부분은 똑같이 변경 되어야 함
+-> 앞이 char 이면 뒤에도 char 
+c언어에서는 동적할당으로 메모리 사용 후 꼭 free 해줘야함! 
+p = (int *)malloc(SIZE * sizeof(int)); : SIZE 크기에 해당하는 배열
+
+<구조체와 포인터>
+(*ps).i보다는 ps -> i 사용하기!
+: 구조체 ps의 멤버 i에 접근하겠다
+
+<강의자료 p3>
+struct Person{
+    char name[10]; #12바이트로 봄
+    int age;
+};
+
+typedef struct person { // 이 시점에서 person은 구조체명, 여기서는 person은 생략 가능
+    char name[10];
+    int age;
+} person; // 이 시점 이후 person은 구조체타입.
+
+- 구조체변수의 구조체 항목 접근 
+    p.name;
+    p.age;
+
+- person을 가르키는 포인터 ptr 선언, 구조체 변수 p를 포인터 ptr이 가리키게 
+    person *ptr;
+    ptr = &p;
+
+- 구조체 포인터의 구조체 항목 접근
+    (*ptr).name
+    (*ptr).age
+    ptr->name
+    ptr->age
+
+char *pc;
+int *pi;
+person *ptr; // 항상 포인터는 4byte
+pc = (char *)malloc(sizeof(char)); // char 형 메모리를 생성하여 pc 이 가르키게
+pi =  (int *)malloc(sizeof(int));// int 형 메모리를 생성하여 pi 이 가르키게
+ptr = (person *)malloc(sizeof(person)); 
+뒤에는 필요한 만큼의 사이즈, 앞에는 그 배열의 자료형
+

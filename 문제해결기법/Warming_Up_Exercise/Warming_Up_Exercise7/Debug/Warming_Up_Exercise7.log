@@ -1,0 +1,4 @@
+﻿  Warming_Up_Exercise7.c
+C:\문해기\Warming_Up_Exercise\Warming_Up_Exercise7\Warming_Up_Exercise7.c(6): warning C4716: 'echo': 값을 반환해야 합니다.
+C:\문해기\Warming_Up_Exercise\Warming_Up_Exercise7\Warming_Up_Exercise7.c(11): warning C4716: 'reverse': 값을 반환해야 합니다.
+  Warming_Up_Exercise7.vcxproj -> C:\문해기\Warming_Up_Exercise\Debug\Warming_Up_Exercise7.exe

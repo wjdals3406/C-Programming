@@ -1,0 +1,4 @@
+﻿  Warming_Up_Exercise8.c
+C:\문해기\Warming_Up_Exercise\Warming_Up_Exercise8\Warming_Up_Exercise8.c(7): warning C4716: 'input': 값을 반환해야 합니다.
+C:\문해기\Warming_Up_Exercise\Warming_Up_Exercise8\Warming_Up_Exercise8.c(16): warning C4716: 'reverse': 값을 반환해야 합니다.
+  Warming_Up_Exercise8.vcxproj -> C:\문해기\Warming_Up_Exercise\Debug\Warming_Up_Exercise8.exe
